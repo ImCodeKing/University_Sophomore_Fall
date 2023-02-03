@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\EDA\Calculator\simulation\qsim
+vAddAndMinus
+Z1 IIN0359RJa<Ac=<0W_3nSn2
+Z2 VfCi=PMYk54a=kz=gGW[o50
+Z3 dD:\EDA\Calculator\simulation\qsim
+Z4 w1668669594
+Z5 8AddAndMinus.vo
+Z6 FAddAndMinus.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@add@and@minus
+!i10b 1
+Z10 !s100 6of_C?RhO8DM1jE0Geh9i2
+!s85 0
+Z11 !s108 1668669597.810000
+Z12 !s107 AddAndMinus.vo|
+Z13 !s90 -work|work|AddAndMinus.vo|
+!s101 -O0
+vAddAndMinus_vlg_check_tst
+!i10b 1
+!s100 Go74ebG9HihaJK^5DVa=@3
+IWZ]SgSJ@kP9eCGm`N1TAg3
+VnobJD@9G9@0SQcJMX=]5J0
+R3
+Z14 w1668669593
+Z15 8AddAndMinus.vt
+Z16 FAddAndMinus.vt
+L0 71
+R7
+r1
+!s85 0
+31
+Z17 !s108 1668669598.248000
+Z18 !s107 AddAndMinus.vt|
+Z19 !s90 -work|work|AddAndMinus.vt|
+!s101 -O0
+R8
+n@add@and@minus_vlg_check_tst
+vAddAndMinus_vlg_sample_tst
+!i10b 1
+!s100 0<hf061V005O>X^UD2N5;2
+In3nK2:0Dci[@@>`Q[]FI;1
+V:C5PW[N:e:>k<3ezG6W@M3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@add@and@minus_vlg_sample_tst
+vAddAndMinus_vlg_vec_tst
+!i10b 1
+!s100 Q0_0`o_;YZh^`AV5<9zBl2
+ISN[;OYzWo5;_B6==XOKDn0
+V?L1I@?9i4JJ?mI]eT;egk2
+R3
+R14
+R15
+R16
+L0 274
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@add@and@minus_vlg_vec_tst

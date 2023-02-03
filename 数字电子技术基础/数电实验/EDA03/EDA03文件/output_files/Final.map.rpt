@@ -1,0 +1,611 @@
+Analysis & Synthesis report for Final
+Fri Dec 23 18:33:16 2022
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Final|Core:inst|state
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Core:inst
+ 14. Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Div1
+ 15. Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Mod1
+ 16. Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Div0
+ 17. Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Mod0
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Dec 23 18:33:16 2022       ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name                      ; Final                                       ;
+; Top-level Entity Name              ; Final                                       ;
+; Family                             ; Cyclone II                                  ;
+; Total logic elements               ; 1,485                                       ;
+;     Total combinational functions  ; 1,484                                       ;
+;     Dedicated logic registers      ; 202                                         ;
+; Total registers                    ; 202                                         ;
+; Total pins                         ; 21                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP2C5Q208C8        ;                    ;
+; Top-level entity name                                                      ; Final              ; Final              ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; Final.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/EDA032/Final.bdf                                                ;         ;
+; Show.v                           ; yes             ; User Verilog HDL File              ; D:/EDA032/Show.v                                                   ;         ;
+; Music.v                          ; yes             ; User Verilog HDL File              ; D:/EDA032/Music.v                                                  ;         ;
+; KeyBoard.v                       ; yes             ; User Verilog HDL File              ; D:/EDA032/KeyBoard.v                                               ;         ;
+; Core.v                           ; yes             ; User Verilog HDL File              ; D:/EDA032/Core.v                                                   ;         ;
+; Clock.v                          ; yes             ; User Verilog HDL File              ; D:/EDA032/Clock.v                                                  ;         ;
+; 7448.bdf                         ; yes             ; Megafunction                       ; c:/altera/13.0/quartus/libraries/others/maxplus2/7448.bdf          ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/altera/13.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/altera/13.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0/quartus/libraries/megafunctions/aglobal130.inc      ;         ;
+; db/lpm_divide_bem.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/EDA032/db/lpm_divide_bem.tdf                                    ;         ;
+; db/sign_div_unsign_llh.tdf       ; yes             ; Auto-Generated Megafunction        ; D:/EDA032/db/sign_div_unsign_llh.tdf                               ;         ;
+; db/alt_u_div_c2f.tdf             ; yes             ; Auto-Generated Megafunction        ; D:/EDA032/db/alt_u_div_c2f.tdf                                     ;         ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/EDA032/db/add_sub_lkc.tdf                                       ;         ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/EDA032/db/add_sub_mkc.tdf                                       ;         ;
+; db/lpm_divide_e6m.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/EDA032/db/lpm_divide_e6m.tdf                                    ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                           ;
++---------------------------------------------+-------------------------+
+; Resource                                    ; Usage                   ;
++---------------------------------------------+-------------------------+
+; Estimated Total logic elements              ; 1,485                   ;
+;                                             ;                         ;
+; Total combinational functions               ; 1484                    ;
+; Logic element usage by number of LUT inputs ;                         ;
+;     -- 4 input functions                    ; 390                     ;
+;     -- 3 input functions                    ; 417                     ;
+;     -- <=2 input functions                  ; 677                     ;
+;                                             ;                         ;
+; Logic elements by mode                      ;                         ;
+;     -- normal mode                          ; 983                     ;
+;     -- arithmetic mode                      ; 501                     ;
+;                                             ;                         ;
+; Total registers                             ; 202                     ;
+;     -- Dedicated logic registers            ; 202                     ;
+;     -- I/O registers                        ; 0                       ;
+;                                             ;                         ;
+; I/O pins                                    ; 21                      ;
+; Embedded Multiplier 9-bit elements          ; 0                       ;
+; Maximum fan-out node                        ; Clock:sadad|clk_10000Hz ;
+; Maximum fan-out                             ; 98                      ;
+; Total fan-out                               ; 4653                    ;
+; Average fan-out                             ; 2.73                    ;
++---------------------------------------------+-------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                      ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                               ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+--------------+
+; |Final                                    ; 1484 (1)          ; 202 (0)      ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |Final                                                                                                            ;              ;
+;    |7448:inst4|                           ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|7448:inst4                                                                                                 ;              ;
+;    |Clock:sadad|                          ; 61 (61)           ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Clock:sadad                                                                                                ;              ;
+;    |Core:inst|                            ; 255 (255)         ; 82 (82)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Core:inst                                                                                                  ;              ;
+;    |KeyBoard:fdsfq2|                      ; 38 (38)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|KeyBoard:fdsfq2                                                                                            ;              ;
+;    |Music:inst7|                          ; 239 (239)         ; 59 (59)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Music:inst7                                                                                                ;              ;
+;    |Show:inst2|                           ; 875 (23)          ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2                                                                                                 ;              ;
+;       |lpm_divide:Div0|                   ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div0                                                                                 ;              ;
+;          |lpm_divide_bem:auto_generated|  ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div0|lpm_divide_bem:auto_generated                                                   ;              ;
+;             |sign_div_unsign_llh:divider| ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div0|lpm_divide_bem:auto_generated|sign_div_unsign_llh:divider                       ;              ;
+;                |alt_u_div_c2f:divider|    ; 212 (212)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div0|lpm_divide_bem:auto_generated|sign_div_unsign_llh:divider|alt_u_div_c2f:divider ;              ;
+;       |lpm_divide:Div1|                   ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div1                                                                                 ;              ;
+;          |lpm_divide_bem:auto_generated|  ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div1|lpm_divide_bem:auto_generated                                                   ;              ;
+;             |sign_div_unsign_llh:divider| ; 212 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div1|lpm_divide_bem:auto_generated|sign_div_unsign_llh:divider                       ;              ;
+;                |alt_u_div_c2f:divider|    ; 212 (212)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Div1|lpm_divide_bem:auto_generated|sign_div_unsign_llh:divider|alt_u_div_c2f:divider ;              ;
+;       |lpm_divide:Mod0|                   ; 214 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod0                                                                                 ;              ;
+;          |lpm_divide_e6m:auto_generated|  ; 214 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod0|lpm_divide_e6m:auto_generated                                                   ;              ;
+;             |sign_div_unsign_llh:divider| ; 214 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod0|lpm_divide_e6m:auto_generated|sign_div_unsign_llh:divider                       ;              ;
+;                |alt_u_div_c2f:divider|    ; 214 (214)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod0|lpm_divide_e6m:auto_generated|sign_div_unsign_llh:divider|alt_u_div_c2f:divider ;              ;
+;       |lpm_divide:Mod1|                   ; 214 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod1                                                                                 ;              ;
+;          |lpm_divide_e6m:auto_generated|  ; 214 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod1|lpm_divide_e6m:auto_generated                                                   ;              ;
+;             |sign_div_unsign_llh:divider| ; 214 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod1|lpm_divide_e6m:auto_generated|sign_div_unsign_llh:divider                       ;              ;
+;                |alt_u_div_c2f:divider|    ; 214 (214)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Show:inst2|lpm_divide:Mod1|lpm_divide_e6m:auto_generated|sign_div_unsign_llh:divider|alt_u_div_c2f:divider ;              ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------+
+; State Machine - |Final|Core:inst|state                                       ;
++----------------+----------------+--------------+-------------+---------------+
+; Name           ; state.Counting ; state.GetNum ; state.Start ; state.Initial ;
++----------------+----------------+--------------+-------------+---------------+
+; state.Initial  ; 0              ; 0            ; 0           ; 0             ;
+; state.Start    ; 0              ; 0            ; 1           ; 1             ;
+; state.GetNum   ; 0              ; 1            ; 0           ; 1             ;
+; state.Counting ; 1              ; 0            ; 0           ; 1             ;
++----------------+----------------+--------------+-------------+---------------+
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; Music:inst7|num[9]                    ; Merged with Music:inst7|num[10]        ;
+; Music:inst7|num[8]                    ; Merged with Music:inst7|num[0]         ;
+; Music:inst7|temp[0]                   ; Stuck at GND due to stuck port data_in ;
+; Music:inst7|num[10]                   ; Stuck at GND due to stuck port data_in ;
+; Core:inst|state~6                     ; Lost fanout                            ;
+; Core:inst|state~7                     ; Lost fanout                            ;
+; Total Number of Removed Registers = 6 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 202   ;
+; Number of registers using Synchronous Clear  ; 82    ;
+; Number of registers using Synchronous Load   ; 6     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 128   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; KeyBoard:fdsfq2|Col[3]                 ; 11      ;
+; KeyBoard:fdsfq2|Col[2]                 ; 11      ;
+; KeyBoard:fdsfq2|Col[1]                 ; 11      ;
+; KeyBoard:fdsfq2|Col[0]                 ; 6       ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |Final|Music:inst7|cnt0[11]   ;
+; 4:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |Final|Core:inst|j[13]        ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |Final|KeyBoard:fdsfq2|i[0]   ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |Final|Music:inst7|cnt1[4]    ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |Final|Core:inst|i[14]        ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 12 LEs               ; 28 LEs                 ; Yes        ; |Final|Show:inst2|Num[3]      ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |Final|Music:inst7|cnt2[1]    ;
+; 10:1               ; 16 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; Yes        ; |Final|Core:inst|Money[7]     ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |Final|Core:inst|Money[0]     ;
+; 11:1               ; 15 bits   ; 105 LEs       ; 45 LEs               ; 60 LEs                 ; Yes        ; |Final|Core:inst|TimeLeft[13] ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |Final|Core:inst|TimeLeft[4]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |Final|Core:inst|TimeLeft     ;
+; 64:1               ; 16 bits   ; 672 LEs       ; 384 LEs              ; 288 LEs                ; No         ; |Final|Music:inst7|Selector3  ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |Final|Core:inst|state        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Core:inst ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; Initial        ; 00    ; Unsigned Binary               ;
+; Start          ; 01    ; Unsigned Binary               ;
+; GetNum         ; 10    ; Unsigned Binary               ;
+; Counting       ; 11    ; Unsigned Binary               ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Div1 ;
++------------------------+----------------+-----------------------------------+
+; Parameter Name         ; Value          ; Type                              ;
++------------------------+----------------+-----------------------------------+
+; LPM_WIDTHN             ; 20             ; Untyped                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                           ;
+; CBXI_PARAMETER         ; lpm_divide_bem ; Untyped                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
++------------------------+----------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Mod1 ;
++------------------------+----------------+-----------------------------------+
+; Parameter Name         ; Value          ; Type                              ;
++------------------------+----------------+-----------------------------------+
+; LPM_WIDTHN             ; 20             ; Untyped                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                           ;
+; CBXI_PARAMETER         ; lpm_divide_e6m ; Untyped                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
++------------------------+----------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Div0 ;
++------------------------+----------------+-----------------------------------+
+; Parameter Name         ; Value          ; Type                              ;
++------------------------+----------------+-----------------------------------+
+; LPM_WIDTHN             ; 20             ; Untyped                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                           ;
+; CBXI_PARAMETER         ; lpm_divide_bem ; Untyped                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
++------------------------+----------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Show:inst2|lpm_divide:Mod0 ;
++------------------------+----------------+-----------------------------------+
+; Parameter Name         ; Value          ; Type                              ;
++------------------------+----------------+-----------------------------------+
+; LPM_WIDTHN             ; 20             ; Untyped                           ;
+; LPM_WIDTHD             ; 4              ; Untyped                           ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                           ;
+; LPM_PIPELINE           ; 0              ; Untyped                           ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                           ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                           ;
+; CBXI_PARAMETER         ; lpm_divide_e6m ; Untyped                           ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                           ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                           ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                    ;
++------------------------+----------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:03     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Fri Dec 23 18:33:11 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Final -c Final
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file final.bdf
+    Info (12023): Found entity 1: Final
+Info (12021): Found 1 design units, including 1 entities, in source file show.v
+    Info (12023): Found entity 1: Show
+Info (12021): Found 1 design units, including 1 entities, in source file music.v
+    Info (12023): Found entity 1: Music
+Info (12021): Found 1 design units, including 1 entities, in source file keyboard.v
+    Info (12023): Found entity 1: KeyBoard
+Info (12021): Found 1 design units, including 1 entities, in source file core.v
+    Info (12023): Found entity 1: Core
+Info (12021): Found 1 design units, including 1 entities, in source file clock.v
+    Info (12023): Found entity 1: Clock
+Warning (10236): Verilog HDL Implicit Net warning at Core.v(10): created implicit net for "available"
+Info (12127): Elaborating entity "Final" for the top level hierarchy
+Info (12128): Elaborating entity "7448" for hierarchy "7448:inst4"
+Info (12130): Elaborated megafunction instantiation "7448:inst4"
+Info (12128): Elaborating entity "Show" for hierarchy "Show:inst2"
+Warning (10230): Verilog HDL assignment warning at Show.v(10): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at Show.v(15): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at Show.v(20): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at Show.v(25): truncated value with size 32 to match size of target (4)
+Info (10264): Verilog HDL Case Statement information at Show.v(6): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "Clock" for hierarchy "Clock:sadad"
+Warning (10230): Verilog HDL assignment warning at Clock.v(14): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at Clock.v(25): truncated value with size 32 to match size of target (18)
+Info (12128): Elaborating entity "Core" for hierarchy "Core:inst"
+Warning (10230): Verilog HDL assignment warning at Core.v(43): truncated value with size 32 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at Core.v(47): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Core.v(73): truncated value with size 32 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at Core.v(74): truncated value with size 32 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at Core.v(98): truncated value with size 32 to match size of target (18)
+Warning (10230): Verilog HDL assignment warning at Core.v(107): truncated value with size 32 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at Core.v(111): truncated value with size 32 to match size of target (18)
+Info (12128): Elaborating entity "KeyBoard" for hierarchy "KeyBoard:fdsfq2"
+Warning (10230): Verilog HDL assignment warning at KeyBoard.v(130): truncated value with size 32 to match size of target (5)
+Info (12128): Elaborating entity "Music" for hierarchy "Music:inst7"
+Warning (10230): Verilog HDL assignment warning at Music.v(18): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(19): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at Music.v(32): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(33): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(34): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(35): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(36): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(37): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(38): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(39): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(40): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(41): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(42): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(43): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(44): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(45): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(46): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(47): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(48): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(49): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(50): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(51): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(52): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(53): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(54): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(55): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(56): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(57): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(58): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(59): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(60): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(61): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(62): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(63): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(64): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(65): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(66): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(67): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(68): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(69): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(70): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(71): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(72): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(73): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(74): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(75): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(76): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(77): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(78): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(79): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(80): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(81): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(82): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(83): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(84): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(85): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(86): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(87): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(88): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(89): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(90): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(91): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at Music.v(129): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at Music.v(134): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at Music.v(139): truncated value with size 32 to match size of target (17)
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Show:inst2|Div1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Show:inst2|Mod1"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Show:inst2|Div0"
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Show:inst2|Mod0"
+Info (12130): Elaborated megafunction instantiation "Show:inst2|lpm_divide:Div1"
+Info (12133): Instantiated megafunction "Show:inst2|lpm_divide:Div1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_bem.tdf
+    Info (12023): Found entity 1: lpm_divide_bem
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_llh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_llh
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_c2f.tdf
+    Info (12023): Found entity 1: alt_u_div_c2f
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info (12023): Found entity 1: add_sub_lkc
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info (12023): Found entity 1: add_sub_mkc
+Info (12130): Elaborated megafunction instantiation "Show:inst2|lpm_divide:Mod1"
+Info (12133): Instantiated megafunction "Show:inst2|lpm_divide:Mod1" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_e6m.tdf
+    Info (12023): Found entity 1: lpm_divide_e6m
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/EDA032/output_files/Final.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1530 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 1509 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 80 warnings
+    Info: Peak virtual memory: 4621 megabytes
+    Info: Processing ended: Fri Dec 23 18:33:16 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/EDA032/output_files/Final.map.smsg.
+
+

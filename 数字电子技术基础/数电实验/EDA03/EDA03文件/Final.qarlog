@@ -1,0 +1,21 @@
+Quartus II Archive log --	D:/EDA032/Final.qarlog
+
+Archive:	D:/EDA032/Final.qar
+Date:		Sat Dec 24 00:50:36 2022
+Quartus II 64-Bit		13.0.0 Build 156 04/24/2013 SJ Full Version
+
+	=========== Files Selected: ===========
+D:/EDA032/Clock.v
+D:/EDA032/Core.v
+D:/EDA032/Final.bdf
+D:/EDA032/Final.qpf
+D:/EDA032/Final.qsf
+D:/EDA032/KeyBoard.v
+D:/EDA032/Music.v
+D:/EDA032/Show.v
+D:/EDA032/incremental_db/compiled_partitions/Final.db_info
+c:/altera/13.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

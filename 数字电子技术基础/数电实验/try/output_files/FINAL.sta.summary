@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Clock:dasdad|clk_250Hz'
+Slack : -56.940
+TNS   : -226.415
+
+Type  : Slow Model Setup 'clk'
+Slack : -13.957
+TNS   : -647.333
+
+Type  : Slow Model Setup 'Clock:dasdad|clk_10000Hz'
+Slack : -7.586
+TNS   : -543.838
+
+Type  : Slow Model Hold 'clk'
+Slack : -2.597
+TNS   : -5.189
+
+Type  : Slow Model Hold 'Clock:dasdad|clk_10000Hz'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Clock:dasdad|clk_250Hz'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.941
+TNS   : -145.889
+
+Type  : Slow Model Minimum Pulse Width 'Clock:dasdad|clk_10000Hz'
+Slack : -0.742
+TNS   : -143.948
+
+Type  : Slow Model Minimum Pulse Width 'Clock:dasdad|clk_250Hz'
+Slack : -0.742
+TNS   : -11.872
+
+Type  : Fast Model Setup 'Clock:dasdad|clk_250Hz'
+Slack : -16.703
+TNS   : -65.171
+
+Type  : Fast Model Setup 'clk'
+Slack : -3.616
+TNS   : -138.951
+
+Type  : Fast Model Setup 'Clock:dasdad|clk_10000Hz'
+Slack : -1.723
+TNS   : -113.013
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.399
+TNS   : -2.797
+
+Type  : Fast Model Hold 'Clock:dasdad|clk_10000Hz'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Clock:dasdad|clk_250Hz'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -98.380
+
+Type  : Fast Model Minimum Pulse Width 'Clock:dasdad|clk_10000Hz'
+Slack : -0.500
+TNS   : -97.000
+
+Type  : Fast Model Minimum Pulse Width 'Clock:dasdad|clk_250Hz'
+Slack : -0.500
+TNS   : -8.000
+
+------------------------------------------------------------

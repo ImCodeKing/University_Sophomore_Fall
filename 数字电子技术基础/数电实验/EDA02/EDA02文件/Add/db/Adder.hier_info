@@ -1,0 +1,11 @@
+|Adder
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN1
+B => inst.IN1
+B => inst3.IN0
+CI => inst1.IN1
+CI => inst2.IN0
+CO <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,84 @@
+`timescale 1 us/ 10 ns
+module KEYBOARD_vlg_tst();
+
+reg clk_tb;
+reg [3:0] row_tb;                                         
+wire Anti_tb;
+wire [3:0]  col_tb;
+wire [3:0]  num_tb;
+                        
+KEYBOARD i1 (  
+	.Anti(Anti_tb),
+	.clk(clk_tb),
+	.col(col_tb),
+	.num(num_tb),
+	.row(row_tb)
+);
+
+always #50  clk_tb <= ~clk_tb;
+
+initial                                                
+begin                                                                                          
+	clk_tb<=0;
+	row_tb <= 4'b1111;
+	
+   #152
+	row_tb <= 4'b0111;
+	#163
+	row_tb <= 4'b1111;
+	#141
+	row_tb <= 4'b0111;
+	#109
+	row_tb <= 4'b1111;
+	#112
+	row_tb <= 4'b0111;
+	#128
+	row_tb <= 4'b1111;
+	#173
+	row_tb <= 4'b0111;
+	#145
+	row_tb <= 4'b1111;
+	#111
+	row_tb <= 4'b0111;
+	#113
+	row_tb <= 4'b1111;
+	#100
+	row_tb <= 4'b0111;
+	#50000
+	#103
+	row_tb <= 4'b1111;
+	#125
+	row_tb <= 4'b0111;
+	#108
+	row_tb <= 4'b1111;
+	#141
+	row_tb <= 4'b0111;
+	#129
+	row_tb <= 4'b1111;
+	#101
+	row_tb <= 4'b0111;
+	#165
+	row_tb <= 4'b1111;
+	#100
+	row_tb <= 4'b0111;
+	#110
+	row_tb <= 4'b1111;
+	#105
+	row_tb <= 4'b0111;
+   #106
+	row_tb <= 4'b1111;
+	
+	
+	#10000
+	#10000 row_tb <= 4'b1011;
+	#10000 row_tb <= 4'b1111;
+	#10000 row_tb <= 4'b1101;
+	#10000 row_tb <= 4'b1111;
+	#10000 row_tb <= 4'b1110;
+	#10000 row_tb <= 4'b1111;
+	#10000
+   $stop;
+                     
+end                                                                                                                               
+endmodule
+

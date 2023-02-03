@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Dec 05 22:13:12 2022
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : ClockTime
+Top-level Entity Name : ClockTime
+Family : Cyclone II
+Device : EP2C5Q208C8
+Timing Models : Final
+Total logic elements : 39 / 4,608 ( < 1 % )
+    Total combinational functions : 39 / 4,608 ( < 1 % )
+    Dedicated logic registers : 30 / 4,608 ( < 1 % )
+Total registers : 30
+Total pins : 2 / 142 ( 1 % )
+Total virtual pins : 0
+Total memory bits : 0 / 119,808 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

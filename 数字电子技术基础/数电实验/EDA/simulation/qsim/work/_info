@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\EDA\simulation\qsim
+vBlock1
+Z1 I5ACWXND5E9EIk6^[>]W[U2
+Z2 VDQ8QjOk9lI:C5c8h123@^2
+Z3 dD:\EDA\simulation\qsim
+Z4 w1669886950
+Z5 8Clock.vo
+Z6 FClock.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@block1
+!i10b 1
+Z10 !s100 IHX3]Q93586`9a:iG3lll0
+!s85 0
+Z11 !s108 1669886953.990000
+Z12 !s107 Clock.vo|
+Z13 !s90 -work|work|Clock.vo|
+!s101 -O0
+vBlock1_vlg_check_tst
+!i10b 1
+!s100 NTiT[ADKKScZLRMN?0Ya=3
+I4jf:@9f3E1AG;K<m_:oG<1
+V_no7O;m5@8PCKV@AN0L[g3
+R3
+Z14 w1669886949
+Z15 8Clock.vt
+Z16 FClock.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z17 !s108 1669886954.123000
+Z18 !s107 Clock.vt|
+Z19 !s90 -work|work|Clock.vt|
+!s101 -O0
+R8
+n@block1_vlg_check_tst
+vBlock1_vlg_sample_tst
+!i10b 1
+!s100 fW[ToM]]ia^5VBO1gi1@92
+IGZeV`?ER5eKYn0z4=^5P01
+V::N[>o:T1aBCkClj=2HzZ0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@block1_vlg_sample_tst
+vBlock1_vlg_vec_tst
+!i10b 1
+!s100 1^C95L><RK9Vfa0HJV9EP2
+IdlhCRP0<22`hmZAz1KMlH0
+V8EbEX^g@9e0ZUXjTWSm=l2
+R3
+R14
+R15
+R16
+L0 152
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@block1_vlg_vec_tst

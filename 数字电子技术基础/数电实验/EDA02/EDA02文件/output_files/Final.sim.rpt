@@ -1,0 +1,309 @@
+Simulator report for Final
+Fri Nov 18 23:00:22 2022
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 147 nodes    ;
+; Simulation Coverage         ;      95.92 % ;
+; Total Number of Transitions ; 118496       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                               ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Option                                                                                     ; Setting             ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+; Simulation mode                                                                            ; Functional          ; Timing        ;
+; Start time                                                                                 ; 0 ns                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                 ;               ;
+; Vector input source                                                                        ; D:/EDA/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                  ; On            ;
+; Check outputs                                                                              ; Off                 ; Off           ;
+; Report simulation coverage                                                                 ; On                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                 ; Off           ;
+; Detect glitches                                                                            ; Off                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      95.92 % ;
+; Total nodes checked                                 ; 147          ;
+; Total output ports checked                          ; 147          ;
+; Total output ports with complete 1/0-value coverage ; 141          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 2            ;
+; Total output ports with no 0-value coverage         ; 4            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                          ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |Final|a                                                        ; |Final|a                                                        ; pin_out          ;
+; |Final|N0                                                       ; |Final|N0                                                       ; out              ;
+; |Final|M0                                                       ; |Final|M0                                                       ; out              ;
+; |Final|M1                                                       ; |Final|M1                                                       ; out              ;
+; |Final|M2                                                       ; |Final|M2                                                       ; out              ;
+; |Final|M_Symbol                                                 ; |Final|M_Symbol                                                 ; out              ;
+; |Final|N1                                                       ; |Final|N1                                                       ; out              ;
+; |Final|N2                                                       ; |Final|N2                                                       ; out              ;
+; |Final|N_Symbol                                                 ; |Final|N_Symbol                                                 ; out              ;
+; |Final|KEY1                                                     ; |Final|KEY1                                                     ; out              ;
+; |Final|b                                                        ; |Final|b                                                        ; pin_out          ;
+; |Final|c                                                        ; |Final|c                                                        ; pin_out          ;
+; |Final|d                                                        ; |Final|d                                                        ; pin_out          ;
+; |Final|e                                                        ; |Final|e                                                        ; pin_out          ;
+; |Final|f                                                        ; |Final|f                                                        ; pin_out          ;
+; |Final|g                                                        ; |Final|g                                                        ; pin_out          ;
+; |Final|DIG2                                                     ; |Final|DIG2                                                     ; pin_out          ;
+; |Final|DIG1                                                     ; |Final|DIG1                                                     ; pin_out          ;
+; |Final|LED0                                                     ; |Final|LED0                                                     ; pin_out          ;
+; |Final|inst1021132                                              ; |Final|inst1021132                                              ; out0             ;
+; |Final|inst73123                                                ; |Final|inst73123                                                ; out0             ;
+; |Final|LED1                                                     ; |Final|LED1                                                     ; pin_out          ;
+; |Final|inst1123122                                              ; |Final|inst1123122                                              ; out0             ;
+; |Final|inst1065656                                              ; |Final|inst1065656                                              ; out0             ;
+; |Final|LED2                                                     ; |Final|LED2                                                     ; pin_out          ;
+; |Final|inst1002                                                 ; |Final|inst1002                                                 ; out0             ;
+; |Final|LED3                                                     ; |Final|LED3                                                     ; pin_out          ;
+; |Final|inst12321                                                ; |Final|inst12321                                                ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|inst               ; |Final|AddAndMinus:inst213|Complement4:inst1|inst               ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|inst1              ; |Final|AddAndMinus:inst213|Complement4:inst1|inst1              ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|inst2              ; |Final|AddAndMinus:inst213|Complement4:inst1|inst2              ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|inst12             ; |Final|AddAndMinus:inst213|Complement4:inst1|inst12             ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst9|inst  ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst9|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst9|inst3 ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst9|inst3 ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst5|inst  ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst5|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst5|inst3 ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst5|inst3 ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst4|inst  ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst4|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst4|inst3 ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst4|inst3 ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst3|inst  ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst3|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst3|inst3 ; |Final|AddAndMinus:inst213|Complement4:inst1|Block1:inst3|inst3 ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|inst                ; |Final|AddAndMinus:inst213|Complement4:inst|inst                ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|inst1               ; |Final|AddAndMinus:inst213|Complement4:inst|inst1               ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|inst2               ; |Final|AddAndMinus:inst213|Complement4:inst|inst2               ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|inst12              ; |Final|AddAndMinus:inst213|Complement4:inst|inst12              ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst9|inst   ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst9|inst   ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst9|inst3  ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst9|inst3  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst5|inst   ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst5|inst   ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst5|inst3  ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst5|inst3  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst4|inst   ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst4|inst   ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst4|inst3  ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst4|inst3  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst3|inst   ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst3|inst   ; out0             ;
+; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst3|inst3  ; |Final|AddAndMinus:inst213|Complement4:inst|Block1:inst3|inst3  ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst8|inst1     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst8|inst1     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst8|inst      ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst8|inst      ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst1     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst1     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst      ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst      ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst4     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst4     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst3     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst3     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst2     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst7|inst2     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst1     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst1     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst      ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst      ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst4     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst4     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst3     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst3     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst2     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst6|inst2     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst1     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst1     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst      ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst      ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst4     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst4     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst3     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst3     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst2     ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst5|inst2     ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst|inst       ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst|inst       ; out0             ;
+; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst|inst3      ; |Final|AddAndMinus:inst213|Add5Bin:inst2|Block1:inst|inst3      ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|inst               ; |Final|AddAndMinus:inst213|Complement5:inst3|inst               ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|inst1              ; |Final|AddAndMinus:inst213|Complement5:inst3|inst1              ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|inst2              ; |Final|AddAndMinus:inst213|Complement5:inst3|inst2              ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|inst3              ; |Final|AddAndMinus:inst213|Complement5:inst3|inst3              ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst9|inst  ; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst9|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst8|inst  ; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst8|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst8|inst3 ; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst8|inst3 ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst7|inst  ; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst7|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst7|inst3 ; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst7|inst3 ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst6|inst  ; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst6|inst  ; out0             ;
+; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst6|inst3 ; |Final|AddAndMinus:inst213|Complement5:inst3|Block1:inst6|inst3 ; out0             ;
+; |Final|BinToDec:inst9|inst2                                     ; |Final|BinToDec:inst9|inst2                                     ; out0             ;
+; |Final|BinToDec:inst9|inst1                                     ; |Final|BinToDec:inst9|inst1                                     ; out0             ;
+; |Final|BinToDec:inst9|inst                                      ; |Final|BinToDec:inst9|inst                                      ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst13|inst2                     ; |Final|BinToDec:inst9|Selector:inst13|inst2                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst13|inst1                     ; |Final|BinToDec:inst9|Selector:inst13|inst1                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst13|inst                      ; |Final|BinToDec:inst9|Selector:inst13|inst                      ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst12|inst2                     ; |Final|BinToDec:inst9|Selector:inst12|inst2                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst12|inst1                     ; |Final|BinToDec:inst9|Selector:inst12|inst1                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst12|inst                      ; |Final|BinToDec:inst9|Selector:inst12|inst                      ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst11|inst2                     ; |Final|BinToDec:inst9|Selector:inst11|inst2                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst11|inst1                     ; |Final|BinToDec:inst9|Selector:inst11|inst1                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst11|inst                      ; |Final|BinToDec:inst9|Selector:inst11|inst                      ; out0             ;
+; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst3|inst1          ; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst3|inst1          ; out0             ;
+; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst2|inst1          ; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst2|inst1          ; out0             ;
+; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst2|inst4          ; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst2|inst4          ; out0             ;
+; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst2|inst2          ; |Final|BinToDec:inst9|Add4Bin:inst6|Block1:inst2|inst2          ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst10|inst2                     ; |Final|BinToDec:inst9|Selector:inst10|inst2                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst10|inst1                     ; |Final|BinToDec:inst9|Selector:inst10|inst1                     ; out0             ;
+; |Final|BinToDec:inst9|Selector:inst10|inst                      ; |Final|BinToDec:inst9|Selector:inst10|inst                      ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst3|4                            ; |Final|FourMUX41:inst5|mux41:inst3|4                            ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst2|6                            ; |Final|FourMUX41:inst5|mux41:inst2|6                            ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst2|2                            ; |Final|FourMUX41:inst5|mux41:inst2|2                            ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst2|3                            ; |Final|FourMUX41:inst5|mux41:inst2|3                            ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst2|4                            ; |Final|FourMUX41:inst5|mux41:inst2|4                            ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst|6                             ; |Final|FourMUX41:inst5|mux41:inst|6                             ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst|2                             ; |Final|FourMUX41:inst5|mux41:inst|2                             ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst|3                             ; |Final|FourMUX41:inst5|mux41:inst|3                             ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst|4                             ; |Final|FourMUX41:inst5|mux41:inst|4                             ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst123213|6                       ; |Final|FourMUX41:inst5|mux41:inst123213|6                       ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst123213|2                       ; |Final|FourMUX41:inst5|mux41:inst123213|2                       ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst123213|3                       ; |Final|FourMUX41:inst5|mux41:inst123213|3                       ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst123213|4                       ; |Final|FourMUX41:inst5|mux41:inst123213|4                       ; out0             ;
+; |Final|FourMUX41:inst5|mux41:inst123213|5                       ; |Final|FourMUX41:inst5|mux41:inst123213|5                       ; out0             ;
+; |Final|DIGLight:inst4|inst9                                     ; |Final|DIGLight:inst4|inst9                                     ; out0             ;
+; |Final|DIGLight:inst4|inst8                                     ; |Final|DIGLight:inst4|inst8                                     ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|69                              ; |Final|DIGLight:inst4|7448:inst|69                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|36                              ; |Final|DIGLight:inst4|7448:inst|36                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|39                              ; |Final|DIGLight:inst4|7448:inst|39                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|35                              ; |Final|DIGLight:inst4|7448:inst|35                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|68                              ; |Final|DIGLight:inst4|7448:inst|68                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|34                              ; |Final|DIGLight:inst4|7448:inst|34                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|7                               ; |Final|DIGLight:inst4|7448:inst|7                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|8                               ; |Final|DIGLight:inst4|7448:inst|8                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|70                              ; |Final|DIGLight:inst4|7448:inst|70                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|33                              ; |Final|DIGLight:inst4|7448:inst|33                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|6                               ; |Final|DIGLight:inst4|7448:inst|6                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|67                              ; |Final|DIGLight:inst4|7448:inst|67                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|5                               ; |Final|DIGLight:inst4|7448:inst|5                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|3                               ; |Final|DIGLight:inst4|7448:inst|3                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|4                               ; |Final|DIGLight:inst4|7448:inst|4                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|71                              ; |Final|DIGLight:inst4|7448:inst|71                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|32                              ; |Final|DIGLight:inst4|7448:inst|32                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|66                              ; |Final|DIGLight:inst4|7448:inst|66                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|31                              ; |Final|DIGLight:inst4|7448:inst|31                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|2                               ; |Final|DIGLight:inst4|7448:inst|2                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|30                              ; |Final|DIGLight:inst4|7448:inst|30                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|72                              ; |Final|DIGLight:inst4|7448:inst|72                              ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|1                               ; |Final|DIGLight:inst4|7448:inst|1                               ; out0             ;
+; |Final|DIGLight:inst4|7448:inst|38                              ; |Final|DIGLight:inst4|7448:inst|38                              ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                             ;
++---------------------------------+---------------------------------+------------------+
+; Node Name                       ; Output Port Name                ; Output Port Type ;
++---------------------------------+---------------------------------+------------------+
+; |Final|DIG3                     ; |Final|DIG3                     ; pin_out          ;
+; |Final|DIGLight:inst4|inst20921 ; |Final|DIGLight:inst4|inst20921 ; out0             ;
++---------------------------------+---------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                             ;
++---------------------------------+---------------------------------+------------------+
+; Node Name                       ; Output Port Name                ; Output Port Type ;
++---------------------------------+---------------------------------+------------------+
+; |Final|KEY0                     ; |Final|KEY0                     ; out              ;
+; |Final|DIG0                     ; |Final|DIG0                     ; pin_out          ;
+; |Final|DIGLight:inst4|inst21123 ; |Final|DIGLight:inst4|inst21123 ; out0             ;
+; |Final|DIGLight:inst4|inst7     ; |Final|DIGLight:inst4|inst7     ; out0             ;
++---------------------------------+---------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Fri Nov 18 23:00:21 2022
+Info: Command: quartus_sim --simulation_results_format=VWF Final -c Final
+Info (324025): Using vector source file "D:/EDA/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      95.92 %
+Info (328052): Number of transitions in simulation is 118496
+Info (324045): Vector file Final.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4448 megabytes
+    Info: Processing ended: Fri Nov 18 23:00:22 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

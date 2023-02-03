@@ -1,0 +1,7 @@
+
+State Machine - |FINAL|Core:dasd|state
+Name state.count state.numin state.start state.init 
+state.init 0 0 0 0 
+state.start 0 0 1 1 
+state.numin 0 1 0 1 
+state.count 1 0 0 1 

@@ -1,0 +1,7 @@
+
+State Machine - |Final|Core:inst|state
+Name state.Counting state.GetNum state.Start state.Initial 
+state.Initial 0 0 0 0 
+state.Start 0 0 1 1 
+state.GetNum 0 1 0 1 
+state.Counting 1 0 0 1 

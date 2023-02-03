@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\EDA\Calculator\simulation\modelsim
+vAddAndMinus
+I`0mmQo7JLz6H78b2NV1VD0
+VfCi=PMYk54a=kz=gGW[o50
+Z1 dD:\EDA\Calculator\simulation\modelsim
+w1668749659
+8AddAndMinus.vo
+FAddAndMinus.vo
+L0 31
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@add@and@minus
+!i10b 1
+!s100 Y]gWi^5gM3;LCz0=0Kf<C0
+!s85 0
+!s108 1668749682.022000
+!s107 AddAndMinus.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|AddAndMinus.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+vAddAndMinus_vlg_tst
+!i10b 1
+!s100 `nE:?a:H:_RcmPl8?GHVb1
+Icn6EYFUc;CfHU0Agf`K:l2
+VAH1PBzVH_@5Qj_=ZKFdYB0
+R1
+w1668749640
+8D:/EDA/Calculator/simulation/modelsim/AddAndMinus.vt
+FD:/EDA/Calculator/simulation/modelsim/AddAndMinus.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1668749682.147000
+!s107 D:/EDA/Calculator/simulation/modelsim/AddAndMinus.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/EDA/Calculator/simulation/modelsim|D:/EDA/Calculator/simulation/modelsim/AddAndMinus.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/EDA/Calculator/simulation/modelsim -O0
+n@add@and@minus_vlg_tst

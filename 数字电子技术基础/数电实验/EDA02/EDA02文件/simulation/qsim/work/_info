@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\EDA\simulation\qsim
+vAddAndMinus
+Z1 !s100 6of_C?RhO8DM1jE0Geh9i2
+Z2 IIN0359RJa<Ac=<0W_3nSn2
+Z3 VfCi=PMYk54a=kz=gGW[o50
+Z4 dD:\EDA\simulation\qsim
+Z5 w1668593928
+Z6 8AddAndMinus.vo
+Z7 FAddAndMinus.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|AddAndMinus.vo|
+Z10 o-work work -O0
+Z11 n@add@and@minus
+Z12 !s108 1668593931.569000
+Z13 !s107 AddAndMinus.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vAddAndMinus_vlg_check_tst
+Z14 !s100 hcMC7;Ri>5B?32a9ozmZ21
+Z15 IPn>FeVa0hoR<T9;M=W;P33
+Z16 VnobJD@9G9@0SQcJMX=]5J0
+R4
+Z17 w1668593927
+Z18 8AddAndMinus.vt
+Z19 FAddAndMinus.vt
+L0 71
+R8
+r1
+31
+Z20 !s108 1668593931.676000
+Z21 !s107 AddAndMinus.vt|
+Z22 !s90 -work|work|AddAndMinus.vt|
+R10
+Z23 n@add@and@minus_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vAddAndMinus_vlg_sample_tst
+Z24 !s100 0<hf061V005O>X^UD2N5;2
+Z25 In3nK2:0Dci[@@>`Q[]FI;1
+Z26 V:C5PW[N:e:>k<3ezG6W@M3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 n@add@and@minus_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vAddAndMinus_vlg_vec_tst
+Z28 I]l4[Pezil9?`3h;c6D?2V2
+Z29 V?L1I@?9i4JJ?mI]eT;egk2
+R4
+R17
+R18
+R19
+Z30 L0 279
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z31 n@add@and@minus_vlg_vec_tst
+Z32 !s100 U^8VPVlHS<07@41DjCMjC2
+!i10b 1
+!s85 0
+!s101 -O0
+vFinal
+Z33 I@cWafehFO1M]YP4B>::0F3
+Z34 Vo;kLIGkn0406dIDeLzFOd3
+R4
+Z35 w1668672259
+Z36 8Final.vo
+Z37 FFinal.vo
+L0 31
+R8
+r1
+31
+R10
+Z38 n@final
+!i10b 1
+Z39 !s100 gOknWHG^oVK=hRG83@YkM3
+!s85 0
+Z40 !s108 1668672262.161000
+Z41 !s107 Final.vo|
+Z42 !s90 -work|work|Final.vo|
+!s101 -O0
+vFinal_vlg_check_tst
+!i10b 1
+!s100 6Nfn4CPZ0@WXB[D4MU?PS0
+I0>B2OSlfZJhacfM@BdIZj0
+VPC]K]bOROE]K_en=gid=_0
+R4
+Z43 w1668672258
+Z44 8Final.vt
+Z45 FFinal.vt
+L0 75
+R8
+r1
+!s85 0
+31
+Z46 !s108 1668672262.264000
+Z47 !s107 Final.vt|
+Z48 !s90 -work|work|Final.vt|
+!s101 -O0
+R10
+n@final_vlg_check_tst
+vFinal_vlg_sample_tst
+!i10b 1
+!s100 @Pe?`?eg4LG[Gh=j^@ScL3
+IZVV2S5kGBAUX]XUf8@PFA0
+VNC]1;?B_2;ob0mXkj]elH3
+R4
+R43
+R44
+R45
+L0 29
+R8
+r1
+!s85 0
+31
+R46
+R47
+R48
+!s101 -O0
+R10
+n@final_vlg_sample_tst
+vFinal_vlg_vec_tst
+!i10b 1
+!s100 5@Oz<@EMDNE`CdeH4QaXk3
+I5z5i7g>NXLd>P3R9OLSPa0
+VYTWh8Y25I>K6d>A]RO>PP0
+R4
+R43
+R44
+R45
+L0 548
+R8
+r1
+!s85 0
+31
+R46
+R47
+R48
+!s101 -O0
+R10
+n@final_vlg_vec_tst

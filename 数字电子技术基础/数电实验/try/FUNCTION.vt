@@ -1,0 +1,67 @@
+`timescale 1 us/ 10 ns
+module FUNCTION_vlg_tst();
+reg Anti_tb;
+reg clk_tb;
+reg [3:0] num_tb;                                           
+wire [19:0]  chargetime_tb;
+wire [19:0]  coinnum_tb;
+wire light_tb;
+wire music_tb;
+                    
+FUNCTION i1 ( 
+	.Anti(Anti_tb),
+	.chargetime(chargetime_tb),
+	.clk(clk_tb),
+	.coinnum(coinnum_tb),
+	.light(light_tb),
+	.music(music_tb),
+	.num(num_tb)
+);
+
+always #50  clk_tb <= ~clk_tb;
+
+initial                                                
+begin                                                                                 
+	clk_tb <= 0;
+	Anti_tb<=0;
+	num_tb <= 4'd15;
+	#1000000 
+	Anti_tb<=1;
+	num_tb <= 4'd11;
+	#1000000
+	Anti_tb<=0;
+	#1000000
+	Anti_tb<=1;
+	num_tb <= 4'd4;
+	#1000000
+	Anti_tb<=0 ;
+	#1000000
+	Anti_tb<=1;
+	num_tb <= 4'd5;
+	#1000000
+	Anti_tb<=0 ;
+	#1000000
+	Anti_tb<=1;
+	num_tb <= 4'd12;
+	#1000000
+	Anti_tb<=0 ;
+	#1000000
+	Anti_tb<=1;
+	num_tb <= 4'd1;
+	#1000000
+	Anti_tb<=0 ;
+	#1000000
+	Anti_tb<=1;
+	num_tb <= 4'd8;
+	#1000000
+	Anti_tb<=0 ;
+	#1000000
+	Anti_tb<=1;
+	num_tb <= 4'd13;
+	#1000000
+	Anti_tb<=0 ;
+	#70000000
+	$stop;                   
+end                                                    
+endmodule
+
